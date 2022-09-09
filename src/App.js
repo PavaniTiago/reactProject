@@ -1,17 +1,18 @@
 import './App.css';
+import Button from './Button';
 
-  function saySmth(){
-    return(
-      <h2>
-        My first time using React
-      </h2>
-    );
-  }
+
+function say(a, b){
+    alert(a + b)
+}
+  
 
 function App() {
   return (
     <div className="App">
-      {saySmth()}
+      Hi
+      <br></br>
+      <Button onClick={() => say(10, 20)} name="Tiago"/>
     </div>
   );
 }
